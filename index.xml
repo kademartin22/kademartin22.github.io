@@ -9,7 +9,7 @@
 <link>https://your-website-url.example.com/</link>
 <atom:link href="https://your-website-url.example.com/index.xml" rel="self" type="application/rss+xml"/>
 <description>A blog about sports and data</description>
-<generator>quarto-1.10.18</generator>
+<generator>quarto-1.11.9</generator>
 <lastBuildDate>Mon, 02 Nov 2026 06:00:00 GMT</lastBuildDate>
 <item>
   <title>CHANGE THIS TO BE THE TITLE OF YOUR POST</title>
@@ -85,7 +85,7 @@ font-style: inherit;">1</span></span></code></pre></div></div>
   <category>analysis</category>
   <guid>https://your-website-url.example.com/posts/post-with-code/</guid>
   <pubDate>Mon, 02 Nov 2026 06:00:00 GMT</pubDate>
-  <media:content url="https://your-website-url.example.com/posts/post-with-code/image.jpg" medium="image" type="image/jpeg"/>
+  <media:content url="https://your-website-url.example.com/posts/post-with-code/image.jpg" medium="image" type="image/jpeg" height="96" width="144"/>
 </item>
 <item>
   <title>Welcome To My Blog</title>
