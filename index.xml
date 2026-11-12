@@ -12,7 +12,7 @@
 <generator>quarto-1.11.9</generator>
 <lastBuildDate>Fri, 13 Nov 2026 06:00:00 GMT</lastBuildDate>
 <item>
-  <title>Has Erling Haaland been the best striker since 2022?</title>
+  <title>Do Balon D’or rankings carry weight anymore?</title>
   <dc:creator>Kade Martin</dc:creator>
   <link>https://your-website-url.example.com/posts/erling-haaland-goals/</link>
   <description><![CDATA[ 
@@ -21,7 +21,10 @@
 
 
 
-<p>Hello this is a test post :3</p>
+<p>The Balon D’or rankings are a broken mess of opinions and short-sighted facts. How is it that Erling Haaland, playing in arguably the most difficult league in the world, leading his country to their best ever World Cup finish, winning two trophies with his club places eighth while Kylian Mbappé who finished with less goals, less trophies, but played two more world cup games (those being the semi-finals and third place game, finishing fourth overall) means second place?&nbsp;</p>
+<p>Erling Haaland has been disrespected since joining Manchester City in 2022, arguably being the most important player for the club in that timeframe.</p>
+<p>After scoring the most goals in an English Premier League season (and the most in a debut season), Erling Haaland established himself as one of the most feared and lethal forwards in the world, particularly at his number 9 position, or the striker. Since then he has slowed down but has still placed top three since his debut in the 2022-23 season.&nbsp;</p>
+<p>Finishing with one Premier League golden boot is hard enough with how good the talent in the league arguably is, but three in your first four seasons and currently leading the pack in your fifth is an achievement. Yet, to many, it’s par for the course for Haaland.</p>
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
@@ -623,6 +626,9 @@ font-style: inherit;">element_blank</span>()</span>
 </div>
 </div>
 </div>
+<p>The top three strikers in the world over the last five years have been argued to be Harry Kane, Kylian Mbappé and Erling Haaland, with order up to the specific person’s opinion. The argument comes from the specific leagues that these players have played in, with the <a href="https://www.uefa.com/nationalassociations/uefarankings/country/?year=2027">French league</a> being the weakest out of the top five from the 2022-23 season up until the current season of 2026-27.&nbsp;</p>
+<p>Kane has played in England for one year and Germany for four years, Haaland has played in England for five years, and Mbappé in France for two years and Spain for three years as of now.&nbsp;</p>
+<p>Either way, the three players have put up monstrous numbers for the clubs they have represented in those times.</p>
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
@@ -632,11 +638,8 @@ font-style: inherit;">library</span>(tidyverse)</span>
 <span id="cb2-2"><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">library</span>(ggrepel)</span>
-<span id="cb2-3"><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">library</span>(ggbeeswarm)</span>
-<span id="cb2-4"></span>
-<span id="cb2-5">epl2627 <span class="ot" style="color: #003B4F;
+<span id="cb2-3"></span>
+<span id="cb2-4">epl2627 <span class="ot" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
 background-color: null;
@@ -645,14 +648,14 @@ background-color: null;
 font-style: inherit;">"EPL_2026-27.csv.csv"</span>) <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">|&gt;</span></span>
-<span id="cb2-6">  <span class="fu" style="color: #4758AB;
+<span id="cb2-5">  <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">mutate</span>(<span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">season =</span> <span class="dv" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">2027</span>)</span>
-<span id="cb2-7">epl2526 <span class="ot" style="color: #003B4F;
+<span id="cb2-6">epl2526 <span class="ot" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
 background-color: null;
@@ -661,14 +664,14 @@ background-color: null;
 font-style: inherit;">"EPL_2025-26.csv.csv"</span>)<span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">|&gt;</span></span>
-<span id="cb2-8">  <span class="fu" style="color: #4758AB;
+<span id="cb2-7">  <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">mutate</span>(<span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">season =</span> <span class="dv" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">2026</span>)</span>
-<span id="cb2-9">epl2425 <span class="ot" style="color: #003B4F;
+<span id="cb2-8">epl2425 <span class="ot" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
 background-color: null;
@@ -677,14 +680,14 @@ background-color: null;
 font-style: inherit;">"EPL_2024-25.csv.csv"</span>)<span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">|&gt;</span></span>
-<span id="cb2-10">  <span class="fu" style="color: #4758AB;
+<span id="cb2-9">  <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">mutate</span>(<span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">season =</span> <span class="dv" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">2025</span>)</span>
-<span id="cb2-11">epl2324 <span class="ot" style="color: #003B4F;
+<span id="cb2-10">epl2324 <span class="ot" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
 background-color: null;
@@ -693,14 +696,14 @@ background-color: null;
 font-style: inherit;">"EPL_2023-24.csv.csv"</span>)<span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">|&gt;</span></span>
-<span id="cb2-12">  <span class="fu" style="color: #4758AB;
+<span id="cb2-11">  <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">mutate</span>(<span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">season =</span> <span class="dv" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">2024</span>)</span>
-<span id="cb2-13">epl2223 <span class="ot" style="color: #003B4F;
+<span id="cb2-12">epl2223 <span class="ot" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
 background-color: null;
@@ -709,15 +712,15 @@ background-color: null;
 font-style: inherit;">"EPL_2022-23.csv.csv"</span>)<span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">|&gt;</span></span>
-<span id="cb2-14">  <span class="fu" style="color: #4758AB;
+<span id="cb2-13">  <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">mutate</span>(<span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">season =</span> <span class="dv" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">2023</span>)</span>
-<span id="cb2-15"></span>
-<span id="cb2-16">bundes2627 <span class="ot" style="color: #003B4F;
+<span id="cb2-14"></span>
+<span id="cb2-15">bundes2627 <span class="ot" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
 background-color: null;
@@ -726,14 +729,14 @@ background-color: null;
 font-style: inherit;">"Bundes_2026-27.csv.csv"</span>) <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">|&gt;</span></span>
-<span id="cb2-17">  <span class="fu" style="color: #4758AB;
+<span id="cb2-16">  <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">mutate</span>(<span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">season =</span> <span class="dv" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">2027</span>)</span>
-<span id="cb2-18">bundes2526 <span class="ot" style="color: #003B4F;
+<span id="cb2-17">bundes2526 <span class="ot" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
 background-color: null;
@@ -742,14 +745,14 @@ background-color: null;
 font-style: inherit;">"Bundes_2025-26.csv.csv"</span>)<span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">|&gt;</span></span>
-<span id="cb2-19">  <span class="fu" style="color: #4758AB;
+<span id="cb2-18">  <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">mutate</span>(<span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">season =</span> <span class="dv" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">2026</span>)</span>
-<span id="cb2-20">bundes2425 <span class="ot" style="color: #003B4F;
+<span id="cb2-19">bundes2425 <span class="ot" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
 background-color: null;
@@ -758,14 +761,14 @@ background-color: null;
 font-style: inherit;">"Bundes_2024-25.csv.csv"</span>)<span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">|&gt;</span></span>
-<span id="cb2-21">  <span class="fu" style="color: #4758AB;
+<span id="cb2-20">  <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">mutate</span>(<span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">season =</span> <span class="dv" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">2025</span>)</span>
-<span id="cb2-22">budes2324 <span class="ot" style="color: #003B4F;
+<span id="cb2-21">budes2324 <span class="ot" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
 background-color: null;
@@ -774,14 +777,14 @@ background-color: null;
 font-style: inherit;">"Bundes_2023-24.csv.csv"</span>)<span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">|&gt;</span></span>
-<span id="cb2-23">  <span class="fu" style="color: #4758AB;
+<span id="cb2-22">  <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">mutate</span>(<span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">season =</span> <span class="dv" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">2024</span>)</span>
-<span id="cb2-24">bundes2223 <span class="ot" style="color: #003B4F;
+<span id="cb2-23">bundes2223 <span class="ot" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
 background-color: null;
@@ -790,15 +793,15 @@ background-color: null;
 font-style: inherit;">"Bundes_2022-23.csv.csv"</span>)<span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">|&gt;</span></span>
-<span id="cb2-25">  <span class="fu" style="color: #4758AB;
+<span id="cb2-24">  <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">mutate</span>(<span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">season =</span> <span class="dv" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">2023</span>)</span>
-<span id="cb2-26"></span>
-<span id="cb2-27">laliga2627 <span class="ot" style="color: #003B4F;
+<span id="cb2-25"></span>
+<span id="cb2-26">laliga2627 <span class="ot" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
 background-color: null;
@@ -807,14 +810,14 @@ background-color: null;
 font-style: inherit;">"LaLiga_2026-27.csv.csv"</span>) <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">|&gt;</span></span>
-<span id="cb2-28">  <span class="fu" style="color: #4758AB;
+<span id="cb2-27">  <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">mutate</span>(<span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">season =</span> <span class="dv" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">2027</span>)</span>
-<span id="cb2-29">laliga2526 <span class="ot" style="color: #003B4F;
+<span id="cb2-28">laliga2526 <span class="ot" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
 background-color: null;
@@ -823,14 +826,14 @@ background-color: null;
 font-style: inherit;">"LaLiga_2025-26.csv.csv"</span>)<span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">|&gt;</span></span>
-<span id="cb2-30">  <span class="fu" style="color: #4758AB;
+<span id="cb2-29">  <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">mutate</span>(<span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">season =</span> <span class="dv" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">2026</span>)</span>
-<span id="cb2-31">laliga2425 <span class="ot" style="color: #003B4F;
+<span id="cb2-30">laliga2425 <span class="ot" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
 background-color: null;
@@ -839,14 +842,14 @@ background-color: null;
 font-style: inherit;">"LaLiga_2024-25.csv.csv"</span>)<span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">|&gt;</span></span>
-<span id="cb2-32">  <span class="fu" style="color: #4758AB;
+<span id="cb2-31">  <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">mutate</span>(<span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">season =</span> <span class="dv" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">2025</span>)</span>
-<span id="cb2-33">laliga2324 <span class="ot" style="color: #003B4F;
+<span id="cb2-32">laliga2324 <span class="ot" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
 background-color: null;
@@ -855,14 +858,14 @@ background-color: null;
 font-style: inherit;">"LaLiga_2023-24.csv.csv"</span>)<span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">|&gt;</span></span>
-<span id="cb2-34">  <span class="fu" style="color: #4758AB;
+<span id="cb2-33">  <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">mutate</span>(<span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">season =</span> <span class="dv" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">2024</span>)</span>
-<span id="cb2-35">laliga2223 <span class="ot" style="color: #003B4F;
+<span id="cb2-34">laliga2223 <span class="ot" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
 background-color: null;
@@ -871,15 +874,15 @@ background-color: null;
 font-style: inherit;">"LaLiga_2022-23.csv.csv"</span>)<span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">|&gt;</span></span>
-<span id="cb2-36">  <span class="fu" style="color: #4758AB;
+<span id="cb2-35">  <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">mutate</span>(<span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">season =</span> <span class="dv" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">2023</span>)</span>
-<span id="cb2-37"></span>
-<span id="cb2-38">ligue2627 <span class="ot" style="color: #003B4F;
+<span id="cb2-36"></span>
+<span id="cb2-37">ligue2627 <span class="ot" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
 background-color: null;
@@ -888,14 +891,14 @@ background-color: null;
 font-style: inherit;">"Ligue1_2026-27.csv.csv"</span>) <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">|&gt;</span></span>
-<span id="cb2-39">  <span class="fu" style="color: #4758AB;
+<span id="cb2-38">  <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">mutate</span>(<span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">season =</span> <span class="dv" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">2027</span>)</span>
-<span id="cb2-40">ligue2526 <span class="ot" style="color: #003B4F;
+<span id="cb2-39">ligue2526 <span class="ot" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
 background-color: null;
@@ -904,14 +907,14 @@ background-color: null;
 font-style: inherit;">"Ligue1_2025-26.csv.csv"</span>)<span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">|&gt;</span></span>
-<span id="cb2-41">  <span class="fu" style="color: #4758AB;
+<span id="cb2-40">  <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">mutate</span>(<span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">season =</span> <span class="dv" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">2026</span>)</span>
-<span id="cb2-42">ligue2425 <span class="ot" style="color: #003B4F;
+<span id="cb2-41">ligue2425 <span class="ot" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
 background-color: null;
@@ -920,14 +923,14 @@ background-color: null;
 font-style: inherit;">"Ligue1_2024-25.csv.csv"</span>)<span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">|&gt;</span></span>
-<span id="cb2-43">  <span class="fu" style="color: #4758AB;
+<span id="cb2-42">  <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">mutate</span>(<span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">season =</span> <span class="dv" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">2025</span>)</span>
-<span id="cb2-44">ligue2324 <span class="ot" style="color: #003B4F;
+<span id="cb2-43">ligue2324 <span class="ot" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
 background-color: null;
@@ -936,14 +939,14 @@ background-color: null;
 font-style: inherit;">"Ligue1_2023-24.csv.csv"</span>)<span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">|&gt;</span></span>
-<span id="cb2-45">  <span class="fu" style="color: #4758AB;
+<span id="cb2-44">  <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">mutate</span>(<span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">season =</span> <span class="dv" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">2024</span>)</span>
-<span id="cb2-46">ligue2223 <span class="ot" style="color: #003B4F;
+<span id="cb2-45">ligue2223 <span class="ot" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
 background-color: null;
@@ -952,15 +955,15 @@ background-color: null;
 font-style: inherit;">"Ligue1_2022-23.csv.csv"</span>)<span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">|&gt;</span></span>
-<span id="cb2-47">  <span class="fu" style="color: #4758AB;
+<span id="cb2-46">  <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">mutate</span>(<span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">season =</span> <span class="dv" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">2023</span>)</span>
-<span id="cb2-48"></span>
-<span id="cb2-49">seriea2627 <span class="ot" style="color: #003B4F;
+<span id="cb2-47"></span>
+<span id="cb2-48">seriea2627 <span class="ot" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
 background-color: null;
@@ -969,14 +972,14 @@ background-color: null;
 font-style: inherit;">"SerieA_2026-27.csv.csv"</span>) <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">|&gt;</span></span>
-<span id="cb2-50">  <span class="fu" style="color: #4758AB;
+<span id="cb2-49">  <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">mutate</span>(<span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">season =</span> <span class="dv" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">2027</span>)</span>
-<span id="cb2-51">seriea2526 <span class="ot" style="color: #003B4F;
+<span id="cb2-50">seriea2526 <span class="ot" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
 background-color: null;
@@ -985,14 +988,14 @@ background-color: null;
 font-style: inherit;">"SerieA_2025-26.csv.csv"</span>)<span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">|&gt;</span></span>
-<span id="cb2-52">  <span class="fu" style="color: #4758AB;
+<span id="cb2-51">  <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">mutate</span>(<span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">season =</span> <span class="dv" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">2026</span>)</span>
-<span id="cb2-53">seriea2425 <span class="ot" style="color: #003B4F;
+<span id="cb2-52">seriea2425 <span class="ot" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
 background-color: null;
@@ -1001,14 +1004,14 @@ background-color: null;
 font-style: inherit;">"SerieA_2024-25.csv.csv"</span>)<span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">|&gt;</span></span>
-<span id="cb2-54">  <span class="fu" style="color: #4758AB;
+<span id="cb2-53">  <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">mutate</span>(<span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">season =</span> <span class="dv" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">2025</span>)</span>
-<span id="cb2-55">seriea2324 <span class="ot" style="color: #003B4F;
+<span id="cb2-54">seriea2324 <span class="ot" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
 background-color: null;
@@ -1017,14 +1020,14 @@ background-color: null;
 font-style: inherit;">"SerieA_2023-24.csv.csv"</span>)<span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">|&gt;</span></span>
-<span id="cb2-56">  <span class="fu" style="color: #4758AB;
+<span id="cb2-55">  <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">mutate</span>(<span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">season =</span> <span class="dv" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">2024</span>)</span>
-<span id="cb2-57">seriea2223 <span class="ot" style="color: #003B4F;
+<span id="cb2-56">seriea2223 <span class="ot" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
 background-color: null;
@@ -1033,1139 +1036,281 @@ background-color: null;
 font-style: inherit;">"SerieA_2022-23.csv.csv"</span>)<span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">|&gt;</span></span>
-<span id="cb2-58">  <span class="fu" style="color: #4758AB;
+<span id="cb2-57">  <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">mutate</span>(<span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">season =</span> <span class="dv" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">2023</span>)</span>
-<span id="cb2-59"></span>
-<span id="cb2-60">combined_epl_full <span class="ot" style="color: #003B4F;
+<span id="cb2-58"></span>
+<span id="cb2-59">combined_epl_full <span class="ot" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">bind_rows</span>(epl2223, epl2324, epl2425, epl2526)</span>
-<span id="cb2-61">combined_bundes_full <span class="ot" style="color: #003B4F;
+<span id="cb2-60">combined_bundes_full <span class="ot" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">bind_rows</span>(bundes2223, budes2324, bundes2425, bundes2526)</span>
-<span id="cb2-62">combined_laliga_full <span class="ot" style="color: #003B4F;
+<span id="cb2-61">combined_laliga_full <span class="ot" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">bind_rows</span>(laliga2223, laliga2324, laliga2425, laliga2526)</span>
-<span id="cb2-63">combined_ligue_full <span class="ot" style="color: #003B4F;
+<span id="cb2-62">combined_ligue_full <span class="ot" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">bind_rows</span>(ligue2223, ligue2324, ligue2425, ligue2526)</span>
-<span id="cb2-64">combined_seriea_full <span class="ot" style="color: #003B4F;
+<span id="cb2-63">combined_seriea_full <span class="ot" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">bind_rows</span>(seriea2223, seriea2324, seriea2425, seriea2526)</span>
-<span id="cb2-65"></span>
-<span id="cb2-66">combined_top5 <span class="ot" style="color: #003B4F;
+<span id="cb2-64"></span>
+<span id="cb2-65">combined_top5 <span class="ot" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">bind_rows</span>(combined_bundes_full, combined_epl_full, combined_laliga_full, combined_ligue_full, combined_seriea_full)</span>
-<span id="cb2-67"></span>
-<span id="cb2-68">h2223 <span class="ot" style="color: #003B4F;
+<span id="cb2-66"></span>
+<span id="cb2-67">h2223 <span class="ot" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">&lt;-</span> epl2223 <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">|&gt;</span></span>
-<span id="cb2-69">  <span class="fu" style="color: #4758AB;
+<span id="cb2-68">  <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">filter</span>(Player <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">==</span> <span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"Erling Haaland"</span>) </span>
-<span id="cb2-70">h2324 <span class="ot" style="color: #003B4F;
+<span id="cb2-69">h2324 <span class="ot" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">&lt;-</span> epl2324 <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">|&gt;</span></span>
-<span id="cb2-71">  <span class="fu" style="color: #4758AB;
+<span id="cb2-70">  <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">filter</span>(Player <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">==</span> <span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"Erling Haaland"</span>) </span>
-<span id="cb2-72">h2425 <span class="ot" style="color: #003B4F;
+<span id="cb2-71">h2425 <span class="ot" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">&lt;-</span> epl2425 <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">|&gt;</span></span>
-<span id="cb2-73">  <span class="fu" style="color: #4758AB;
+<span id="cb2-72">  <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">filter</span>(Player <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">==</span> <span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"Erling Haaland"</span>) </span>
-<span id="cb2-74">h2526 <span class="ot" style="color: #003B4F;
+<span id="cb2-73">h2526 <span class="ot" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">&lt;-</span> epl2526 <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">|&gt;</span></span>
-<span id="cb2-75">  <span class="fu" style="color: #4758AB;
+<span id="cb2-74">  <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">filter</span>(Player <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">==</span> <span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"Erling Haaland"</span>) </span>
-<span id="cb2-76">h2627 <span class="ot" style="color: #003B4F;
+<span id="cb2-75">h2627 <span class="ot" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">&lt;-</span> epl2627 <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">|&gt;</span></span>
-<span id="cb2-77">  <span class="fu" style="color: #4758AB;
+<span id="cb2-76">  <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">filter</span>(Player <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">==</span> <span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"Erling Haaland"</span>)</span>
-<span id="cb2-78"></span>
-<span id="cb2-79">combined_haaland_full <span class="ot" style="color: #003B4F;
+<span id="cb2-77"></span>
+<span id="cb2-78">combined_haaland_full <span class="ot" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">bind_rows</span>(h2223, h2324, h2425, h2526)</span>
-<span id="cb2-80"></span>
-<span id="cb2-81">k2223 <span class="ot" style="color: #003B4F;
+<span id="cb2-79"></span>
+<span id="cb2-80">k2223 <span class="ot" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">&lt;-</span> epl2223 <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">|&gt;</span></span>
-<span id="cb2-82">  <span class="fu" style="color: #4758AB;
+<span id="cb2-81">  <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">filter</span>(Player <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">==</span> <span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"Harry Kane"</span>) </span>
-<span id="cb2-83">k2324 <span class="ot" style="color: #003B4F;
+<span id="cb2-82">k2324 <span class="ot" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">&lt;-</span> budes2324 <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">|&gt;</span></span>
-<span id="cb2-84">  <span class="fu" style="color: #4758AB;
+<span id="cb2-83">  <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">filter</span>(Player <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">==</span> <span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"Harry Kane"</span>) </span>
-<span id="cb2-85">k2425 <span class="ot" style="color: #003B4F;
+<span id="cb2-84">k2425 <span class="ot" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">&lt;-</span> bundes2425 <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">|&gt;</span></span>
-<span id="cb2-86">  <span class="fu" style="color: #4758AB;
+<span id="cb2-85">  <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">filter</span>(Player <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">==</span> <span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"Harry Kane"</span>) </span>
-<span id="cb2-87">k2526 <span class="ot" style="color: #003B4F;
+<span id="cb2-86">k2526 <span class="ot" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">&lt;-</span> bundes2526 <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">|&gt;</span></span>
-<span id="cb2-88">  <span class="fu" style="color: #4758AB;
+<span id="cb2-87">  <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">filter</span>(Player <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">==</span> <span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"Harry Kane"</span>) </span>
-<span id="cb2-89">k2627 <span class="ot" style="color: #003B4F;
+<span id="cb2-88">k2627 <span class="ot" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">&lt;-</span> bundes2627 <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">|&gt;</span></span>
-<span id="cb2-90">  <span class="fu" style="color: #4758AB;
+<span id="cb2-89">  <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">filter</span>(Player <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">==</span> <span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"Harry Kane"</span>)</span>
-<span id="cb2-91"></span>
-<span id="cb2-92">combined_kane_full <span class="ot" style="color: #003B4F;
+<span id="cb2-90"></span>
+<span id="cb2-91">combined_kane_full <span class="ot" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">bind_rows</span>(k2223, k2324, k2425, k2526)</span>
-<span id="cb2-93"></span>
-<span id="cb2-94">mb2223 <span class="ot" style="color: #003B4F;
+<span id="cb2-92"></span>
+<span id="cb2-93">mb2223 <span class="ot" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">&lt;-</span> ligue2223 <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">|&gt;</span></span>
-<span id="cb2-95">  <span class="fu" style="color: #4758AB;
+<span id="cb2-94">  <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">filter</span>(Player <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">==</span> <span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"Kylian Mbappé"</span>) </span>
-<span id="cb2-96">mb2324 <span class="ot" style="color: #003B4F;
+<span id="cb2-95">mb2324 <span class="ot" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">&lt;-</span> ligue2324 <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">|&gt;</span></span>
-<span id="cb2-97">  <span class="fu" style="color: #4758AB;
+<span id="cb2-96">  <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">filter</span>(Player <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">==</span> <span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"Kylian Mbappé"</span>) </span>
-<span id="cb2-98">mb2425 <span class="ot" style="color: #003B4F;
+<span id="cb2-97">mb2425 <span class="ot" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">&lt;-</span> laliga2425 <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">|&gt;</span></span>
-<span id="cb2-99">  <span class="fu" style="color: #4758AB;
+<span id="cb2-98">  <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">filter</span>(Player <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">==</span> <span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"Kylian Mbappé"</span>) </span>
-<span id="cb2-100">mb2526 <span class="ot" style="color: #003B4F;
+<span id="cb2-99">mb2526 <span class="ot" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">&lt;-</span> laliga2526 <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">|&gt;</span></span>
-<span id="cb2-101">  <span class="fu" style="color: #4758AB;
+<span id="cb2-100">  <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">filter</span>(Player <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">==</span> <span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"Kylian Mbappé"</span>) </span>
-<span id="cb2-102">mb2627 <span class="ot" style="color: #003B4F;
+<span id="cb2-101">mb2627 <span class="ot" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">&lt;-</span> laliga2627 <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">|&gt;</span></span>
-<span id="cb2-103">  <span class="fu" style="color: #4758AB;
+<span id="cb2-102">  <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">filter</span>(Player <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">==</span> <span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"Kylian Mbappé"</span>)</span>
-<span id="cb2-104"></span>
-<span id="cb2-105">combined_mbappe_full <span class="ot" style="color: #003B4F;
+<span id="cb2-103"></span>
+<span id="cb2-104">combined_mbappe_full <span class="ot" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">bind_rows</span>(mb2223, mb2324, mb2425, mb2526)</span>
-<span id="cb2-106"></span>
-<span id="cb2-107">goalscorers <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">&lt;-</span> combined_top5 <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">|&gt;</span></span>
-<span id="cb2-108">  <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">filter</span>(</span>
-<span id="cb2-109">    Gls <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">&gt;</span> <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">5</span></span>
-<span id="cb2-110">  )</span>
-<span id="cb2-111"></span>
-<span id="cb2-112">top3 <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">bind_rows</span>(combined_haaland_full, combined_mbappe_full, combined_kane_full)</span>
-<span id="cb2-113"></span>
-<span id="cb2-114"><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">set.seed</span>(<span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">1234</span>)</span>
-<span id="cb2-115"></span>
-<span id="cb2-116"><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">ggplot</span>() <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">+</span></span>
-<span id="cb2-117">  <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">geom_quasirandom</span>(<span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">data =</span> goalscorers, <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">aes</span>(<span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">x=</span>Pos, <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">y=</span>Gls), <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">color=</span><span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"grey"</span>) <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">+</span></span>
-<span id="cb2-118">  <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">geom_quasirandom</span>(<span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">data =</span> combined_haaland_full, <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">aes</span>(<span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">x=</span>Pos, <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">y=</span>Gls, <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">color=</span><span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"Erling Haaland"</span>)) <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">+</span></span>
-<span id="cb2-119">  <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">geom_quasirandom</span>(<span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">data =</span> combined_kane_full, <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">aes</span>(<span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">x=</span>Pos, <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">y=</span>Gls, <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">color=</span><span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"Harry Kane"</span>)) <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">+</span></span>
-<span id="cb2-120">  <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">geom_quasirandom</span>(<span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">data =</span> combined_mbappe_full, <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">aes</span>(<span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">x=</span>Pos, <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">y=</span>Gls, <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">color=</span><span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"Kylian Mbappé"</span>)) <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">+</span></span>
-<span id="cb2-121">  <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">scale_color_manual</span>(<span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">values =</span> <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">c</span>(</span>
-<span id="cb2-122">    <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"#6CABDD"</span>, <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># Erling Haaland</span></span>
-<span id="cb2-123">    <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"#DC052D"</span>, <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># Harry Kane</span></span>
-<span id="cb2-124">    <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"#FEBE10"</span> <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># Kylian Mbappé</span></span>
-<span id="cb2-125">  )) <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">+</span></span>
-<span id="cb2-126">  <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">labs</span>(</span>
-<span id="cb2-127">    <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">x=</span><span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"Position"</span>, </span>
-<span id="cb2-128">    <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">y=</span><span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"Goals"</span>, </span>
-<span id="cb2-129">    <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">title=</span><span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"Top Goalscorers by Postion"</span>, </span>
-<span id="cb2-130">    <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">subtitle =</span> <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"The most goals since the start of the 2022 season through the 2025-26 season."</span>,</span>
-<span id="cb2-131">    <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">caption=</span><span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"Source: FBref.com | By Kade Martin"</span></span>
-<span id="cb2-132">  ) <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">+</span></span>
-<span id="cb2-133">  <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">theme_minimal</span>()  <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">+</span> </span>
-<span id="cb2-134">  <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">theme</span>(</span>
-<span id="cb2-135">    <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">plot.title =</span> <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">element_text</span>(<span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">size =</span> <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">20</span>, <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">face =</span> <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"bold"</span>),</span>
-<span id="cb2-136">    <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">axis.title =</span> <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">element_text</span>(<span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">size =</span> <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">8</span>), </span>
-<span id="cb2-137">    <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">plot.subtitle =</span> <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">element_text</span>(<span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">size=</span><span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">10</span>), </span>
-<span id="cb2-138">    <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">panel.grid.minor =</span> <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">element_blank</span>()</span>
-<span id="cb2-139">  )</span></code></pre></div></div>
-</details>
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="https://your-website-url.example.com/posts/erling-haaland-goals/index_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid figure-img" width="672"></p>
-</figure>
-</div>
-</div>
-</div>
-<div class="cell">
-<details class="code-fold">
-<summary>Code</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">library</span>(tidyverse)</span>
-<span id="cb3-2"><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">library</span>(ggrepel)</span>
-<span id="cb3-3"></span>
-<span id="cb3-4">epl2627 <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">read_csv</span>(<span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"EPL_2026-27.csv.csv"</span>) <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">|&gt;</span></span>
-<span id="cb3-5">  <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">mutate</span>(<span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">season =</span> <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">2027</span>)</span>
-<span id="cb3-6">epl2526 <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">read_csv</span>(<span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"EPL_2025-26.csv.csv"</span>)<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">|&gt;</span></span>
-<span id="cb3-7">  <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">mutate</span>(<span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">season =</span> <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">2026</span>)</span>
-<span id="cb3-8">epl2425 <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">read_csv</span>(<span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"EPL_2024-25.csv.csv"</span>)<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">|&gt;</span></span>
-<span id="cb3-9">  <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">mutate</span>(<span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">season =</span> <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">2025</span>)</span>
-<span id="cb3-10">epl2324 <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">read_csv</span>(<span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"EPL_2023-24.csv.csv"</span>)<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">|&gt;</span></span>
-<span id="cb3-11">  <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">mutate</span>(<span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">season =</span> <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">2024</span>)</span>
-<span id="cb3-12">epl2223 <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">read_csv</span>(<span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"EPL_2022-23.csv.csv"</span>)<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">|&gt;</span></span>
-<span id="cb3-13">  <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">mutate</span>(<span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">season =</span> <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">2023</span>)</span>
-<span id="cb3-14"></span>
-<span id="cb3-15">bundes2627 <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">read_csv</span>(<span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"Bundes_2026-27.csv.csv"</span>) <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">|&gt;</span></span>
-<span id="cb3-16">  <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">mutate</span>(<span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">season =</span> <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">2027</span>)</span>
-<span id="cb3-17">bundes2526 <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">read_csv</span>(<span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"Bundes_2025-26.csv.csv"</span>)<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">|&gt;</span></span>
-<span id="cb3-18">  <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">mutate</span>(<span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">season =</span> <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">2026</span>)</span>
-<span id="cb3-19">bundes2425 <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">read_csv</span>(<span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"Bundes_2024-25.csv.csv"</span>)<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">|&gt;</span></span>
-<span id="cb3-20">  <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">mutate</span>(<span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">season =</span> <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">2025</span>)</span>
-<span id="cb3-21">budes2324 <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">read_csv</span>(<span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"Bundes_2023-24.csv.csv"</span>)<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">|&gt;</span></span>
-<span id="cb3-22">  <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">mutate</span>(<span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">season =</span> <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">2024</span>)</span>
-<span id="cb3-23">bundes2223 <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">read_csv</span>(<span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"Bundes_2022-23.csv.csv"</span>)<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">|&gt;</span></span>
-<span id="cb3-24">  <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">mutate</span>(<span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">season =</span> <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">2023</span>)</span>
-<span id="cb3-25"></span>
-<span id="cb3-26">laliga2627 <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">read_csv</span>(<span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"LaLiga_2026-27.csv.csv"</span>) <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">|&gt;</span></span>
-<span id="cb3-27">  <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">mutate</span>(<span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">season =</span> <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">2027</span>)</span>
-<span id="cb3-28">laliga2526 <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">read_csv</span>(<span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"LaLiga_2025-26.csv.csv"</span>)<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">|&gt;</span></span>
-<span id="cb3-29">  <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">mutate</span>(<span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">season =</span> <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">2026</span>)</span>
-<span id="cb3-30">laliga2425 <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">read_csv</span>(<span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"LaLiga_2024-25.csv.csv"</span>)<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">|&gt;</span></span>
-<span id="cb3-31">  <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">mutate</span>(<span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">season =</span> <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">2025</span>)</span>
-<span id="cb3-32">laliga2324 <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">read_csv</span>(<span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"LaLiga_2023-24.csv.csv"</span>)<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">|&gt;</span></span>
-<span id="cb3-33">  <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">mutate</span>(<span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">season =</span> <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">2024</span>)</span>
-<span id="cb3-34">laliga2223 <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">read_csv</span>(<span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"LaLiga_2022-23.csv.csv"</span>)<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">|&gt;</span></span>
-<span id="cb3-35">  <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">mutate</span>(<span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">season =</span> <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">2023</span>)</span>
-<span id="cb3-36"></span>
-<span id="cb3-37">ligue2627 <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">read_csv</span>(<span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"Ligue1_2026-27.csv.csv"</span>) <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">|&gt;</span></span>
-<span id="cb3-38">  <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">mutate</span>(<span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">season =</span> <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">2027</span>)</span>
-<span id="cb3-39">ligue2526 <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">read_csv</span>(<span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"Ligue1_2025-26.csv.csv"</span>)<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">|&gt;</span></span>
-<span id="cb3-40">  <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">mutate</span>(<span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">season =</span> <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">2026</span>)</span>
-<span id="cb3-41">ligue2425 <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">read_csv</span>(<span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"Ligue1_2024-25.csv.csv"</span>)<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">|&gt;</span></span>
-<span id="cb3-42">  <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">mutate</span>(<span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">season =</span> <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">2025</span>)</span>
-<span id="cb3-43">ligue2324 <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">read_csv</span>(<span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"Ligue1_2023-24.csv.csv"</span>)<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">|&gt;</span></span>
-<span id="cb3-44">  <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">mutate</span>(<span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">season =</span> <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">2024</span>)</span>
-<span id="cb3-45">ligue2223 <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">read_csv</span>(<span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"Ligue1_2022-23.csv.csv"</span>)<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">|&gt;</span></span>
-<span id="cb3-46">  <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">mutate</span>(<span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">season =</span> <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">2023</span>)</span>
-<span id="cb3-47"></span>
-<span id="cb3-48">seriea2627 <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">read_csv</span>(<span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"SerieA_2026-27.csv.csv"</span>) <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">|&gt;</span></span>
-<span id="cb3-49">  <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">mutate</span>(<span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">season =</span> <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">2027</span>)</span>
-<span id="cb3-50">seriea2526 <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">read_csv</span>(<span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"SerieA_2025-26.csv.csv"</span>)<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">|&gt;</span></span>
-<span id="cb3-51">  <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">mutate</span>(<span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">season =</span> <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">2026</span>)</span>
-<span id="cb3-52">seriea2425 <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">read_csv</span>(<span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"SerieA_2024-25.csv.csv"</span>)<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">|&gt;</span></span>
-<span id="cb3-53">  <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">mutate</span>(<span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">season =</span> <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">2025</span>)</span>
-<span id="cb3-54">seriea2324 <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">read_csv</span>(<span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"SerieA_2023-24.csv.csv"</span>)<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">|&gt;</span></span>
-<span id="cb3-55">  <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">mutate</span>(<span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">season =</span> <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">2024</span>)</span>
-<span id="cb3-56">seriea2223 <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">read_csv</span>(<span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"SerieA_2022-23.csv.csv"</span>)<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">|&gt;</span></span>
-<span id="cb3-57">  <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">mutate</span>(<span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">season =</span> <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">2023</span>)</span>
-<span id="cb3-58"></span>
-<span id="cb3-59">combined_epl_full <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">bind_rows</span>(epl2223, epl2324, epl2425, epl2526)</span>
-<span id="cb3-60">combined_bundes_full <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">bind_rows</span>(bundes2223, budes2324, bundes2425, bundes2526)</span>
-<span id="cb3-61">combined_laliga_full <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">bind_rows</span>(laliga2223, laliga2324, laliga2425, laliga2526)</span>
-<span id="cb3-62">combined_ligue_full <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">bind_rows</span>(ligue2223, ligue2324, ligue2425, ligue2526)</span>
-<span id="cb3-63">combined_seriea_full <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">bind_rows</span>(seriea2223, seriea2324, seriea2425, seriea2526)</span>
-<span id="cb3-64"></span>
-<span id="cb3-65">combined_top5 <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">bind_rows</span>(combined_bundes_full, combined_epl_full, combined_laliga_full, combined_ligue_full, combined_seriea_full)</span>
-<span id="cb3-66"></span>
-<span id="cb3-67">h2223 <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">&lt;-</span> epl2223 <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">|&gt;</span></span>
-<span id="cb3-68">  <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">filter</span>(Player <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">==</span> <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"Erling Haaland"</span>) </span>
-<span id="cb3-69">h2324 <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">&lt;-</span> epl2324 <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">|&gt;</span></span>
-<span id="cb3-70">  <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">filter</span>(Player <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">==</span> <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"Erling Haaland"</span>) </span>
-<span id="cb3-71">h2425 <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">&lt;-</span> epl2425 <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">|&gt;</span></span>
-<span id="cb3-72">  <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">filter</span>(Player <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">==</span> <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"Erling Haaland"</span>) </span>
-<span id="cb3-73">h2526 <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">&lt;-</span> epl2526 <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">|&gt;</span></span>
-<span id="cb3-74">  <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">filter</span>(Player <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">==</span> <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"Erling Haaland"</span>) </span>
-<span id="cb3-75">h2627 <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">&lt;-</span> epl2627 <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">|&gt;</span></span>
-<span id="cb3-76">  <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">filter</span>(Player <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">==</span> <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"Erling Haaland"</span>)</span>
-<span id="cb3-77"></span>
-<span id="cb3-78">combined_haaland_full <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">bind_rows</span>(h2223, h2324, h2425, h2526)</span>
-<span id="cb3-79"></span>
-<span id="cb3-80">k2223 <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">&lt;-</span> epl2223 <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">|&gt;</span></span>
-<span id="cb3-81">  <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">filter</span>(Player <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">==</span> <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"Harry Kane"</span>) </span>
-<span id="cb3-82">k2324 <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">&lt;-</span> budes2324 <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">|&gt;</span></span>
-<span id="cb3-83">  <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">filter</span>(Player <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">==</span> <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"Harry Kane"</span>) </span>
-<span id="cb3-84">k2425 <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">&lt;-</span> bundes2425 <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">|&gt;</span></span>
-<span id="cb3-85">  <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">filter</span>(Player <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">==</span> <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"Harry Kane"</span>) </span>
-<span id="cb3-86">k2526 <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">&lt;-</span> bundes2526 <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">|&gt;</span></span>
-<span id="cb3-87">  <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">filter</span>(Player <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">==</span> <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"Harry Kane"</span>) </span>
-<span id="cb3-88">k2627 <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">&lt;-</span> bundes2627 <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">|&gt;</span></span>
-<span id="cb3-89">  <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">filter</span>(Player <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">==</span> <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"Harry Kane"</span>)</span>
-<span id="cb3-90"></span>
-<span id="cb3-91">combined_kane_full <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">bind_rows</span>(k2223, k2324, k2425, k2526)</span>
-<span id="cb3-92"></span>
-<span id="cb3-93">mb2223 <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">&lt;-</span> ligue2223 <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">|&gt;</span></span>
-<span id="cb3-94">  <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">filter</span>(Player <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">==</span> <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"Kylian Mbappé"</span>) </span>
-<span id="cb3-95">mb2324 <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">&lt;-</span> ligue2324 <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">|&gt;</span></span>
-<span id="cb3-96">  <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">filter</span>(Player <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">==</span> <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"Kylian Mbappé"</span>) </span>
-<span id="cb3-97">mb2425 <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">&lt;-</span> laliga2425 <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">|&gt;</span></span>
-<span id="cb3-98">  <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">filter</span>(Player <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">==</span> <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"Kylian Mbappé"</span>) </span>
-<span id="cb3-99">mb2526 <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">&lt;-</span> laliga2526 <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">|&gt;</span></span>
-<span id="cb3-100">  <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">filter</span>(Player <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">==</span> <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"Kylian Mbappé"</span>) </span>
-<span id="cb3-101">mb2627 <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">&lt;-</span> laliga2627 <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">|&gt;</span></span>
-<span id="cb3-102">  <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">filter</span>(Player <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">==</span> <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"Kylian Mbappé"</span>)</span>
-<span id="cb3-103"></span>
-<span id="cb3-104">combined_mbappe_full <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">bind_rows</span>(mb2223, mb2324, mb2425, mb2526)</span>
-<span id="cb3-105"></span>
-<span id="cb3-106">combined_top3 <span class="ot" style="color: #003B4F;
+<span id="cb2-105"></span>
+<span id="cb2-106">combined_top3 <span class="ot" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">bind_rows</span>(combined_mbappe_full, combined_haaland_full, combined_kane_full)</span>
-<span id="cb3-107"></span>
-<span id="cb3-108">combined_top3_bar_data <span class="ot" style="color: #003B4F;
+<span id="cb2-107"></span>
+<span id="cb2-108">combined_top3_bar_data <span class="ot" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">&lt;-</span> combined_top3 <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">|&gt;</span> </span>
-<span id="cb3-109">  <span class="fu" style="color: #4758AB;
+<span id="cb2-109">  <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">select</span>(Player, Gls, season)</span>
-<span id="cb3-110"></span>
-<span id="cb3-111">combined_top3_bar_data2 <span class="ot" style="color: #003B4F;
+<span id="cb2-110"></span>
+<span id="cb2-111">combined_top3_bar_data2 <span class="ot" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">&lt;-</span> combined_top3_bar_data <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">|&gt;</span></span>
-<span id="cb3-112">  <span class="fu" style="color: #4758AB;
+<span id="cb2-112">  <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">mutate</span>(<span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">season =</span> <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">as.character</span>(season))</span>
-<span id="cb3-113"></span>
-<span id="cb3-114"><span class="fu" style="color: #4758AB;
+<span id="cb2-113"></span>
+<span id="cb2-114"><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">ggplot</span>() <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">+</span></span>
-<span id="cb3-115">  <span class="fu" style="color: #4758AB;
+<span id="cb2-115">  <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">geom_bar</span>(<span class="at" style="color: #657422;
 background-color: null;
@@ -2188,41 +1333,41 @@ background-color: null;
 font-style: inherit;">TRUE</span>)) <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">+</span></span>
-<span id="cb3-116">  <span class="fu" style="color: #4758AB;
+<span id="cb2-116">  <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">labs</span>(</span>
-<span id="cb3-117">    <span class="at" style="color: #657422;
+<span id="cb2-117">    <span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">x=</span><span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">""</span>, </span>
-<span id="cb3-118">    <span class="at" style="color: #657422;
+<span id="cb2-118">    <span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">y=</span><span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"Goals"</span>, </span>
-<span id="cb3-119">    <span class="at" style="color: #657422;
+<span id="cb2-119">    <span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">title=</span><span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"Total Goals Scored"</span>, </span>
-<span id="cb3-120">    <span class="at" style="color: #657422;
+<span id="cb2-120">    <span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">subtitle =</span> <span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"The world's top three striker's final goal tallies from the 2022-23 to 2025-26 seasons."</span>,</span>
-<span id="cb3-121">    <span class="at" style="color: #657422;
+<span id="cb2-121">    <span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">caption=</span><span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"Source: FBref.com | By Kade Martin"</span></span>
-<span id="cb3-122">  ) <span class="sc" style="color: #5E5E5E;
+<span id="cb2-122">  ) <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">+</span></span>
-<span id="cb3-123">  <span class="fu" style="color: #4758AB;
+<span id="cb2-123">  <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">theme</span>(</span>
-<span id="cb3-124">    <span class="at" style="color: #657422;
+<span id="cb2-124">    <span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">plot.title =</span> <span class="fu" style="color: #4758AB;
 background-color: null;
@@ -2235,7 +1380,7 @@ background-color: null;
 font-style: inherit;">face =</span> <span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"bold"</span>),</span>
-<span id="cb3-125">    <span class="at" style="color: #657422;
+<span id="cb2-125">    <span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">axis.title =</span> <span class="fu" style="color: #4758AB;
 background-color: null;
@@ -2244,7 +1389,7 @@ background-color: null;
 font-style: inherit;">size =</span> <span class="dv" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">8</span>), </span>
-<span id="cb3-126">    <span class="at" style="color: #657422;
+<span id="cb2-126">    <span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">plot.subtitle =</span> <span class="fu" style="color: #4758AB;
 background-color: null;
@@ -2253,23 +1398,23 @@ background-color: null;
 font-style: inherit;">size=</span><span class="dv" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">10</span>), </span>
-<span id="cb3-127">    <span class="at" style="color: #657422;
+<span id="cb2-127">    <span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">panel.grid.minor =</span> <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">element_blank</span>()</span>
-<span id="cb3-128">  ) <span class="sc" style="color: #5E5E5E;
+<span id="cb2-128">  ) <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">+</span></span>
-<span id="cb3-129">  <span class="fu" style="color: #4758AB;
+<span id="cb2-129">  <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">theme_minimal</span>()  <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">+</span> </span>
-<span id="cb3-130">  <span class="fu" style="color: #4758AB;
+<span id="cb2-130">  <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">theme</span>(</span>
-<span id="cb3-131">    <span class="at" style="color: #657422;
+<span id="cb2-131">    <span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">plot.title =</span> <span class="fu" style="color: #4758AB;
 background-color: null;
@@ -2282,7 +1427,7 @@ background-color: null;
 font-style: inherit;">face =</span> <span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"bold"</span>),</span>
-<span id="cb3-132">    <span class="at" style="color: #657422;
+<span id="cb2-132">    <span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">axis.title =</span> <span class="fu" style="color: #4758AB;
 background-color: null;
@@ -2291,7 +1436,7 @@ background-color: null;
 font-style: inherit;">size =</span> <span class="dv" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">8</span>), </span>
-<span id="cb3-133">    <span class="at" style="color: #657422;
+<span id="cb2-133">    <span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">plot.subtitle =</span> <span class="fu" style="color: #4758AB;
 background-color: null;
@@ -2300,12 +1445,877 @@ background-color: null;
 font-style: inherit;">size=</span><span class="dv" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">10</span>), </span>
-<span id="cb3-134">    <span class="at" style="color: #657422;
+<span id="cb2-134">    <span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">panel.grid.minor =</span> <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">element_blank</span>()</span>
-<span id="cb3-135">  )</span></code></pre></div></div>
+<span id="cb2-135">  )</span></code></pre></div></div>
+</details>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="https://your-website-url.example.com/posts/erling-haaland-goals/index_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p><a href="https://ballondor.com/players/harry-kane-1526">Harry Kane</a>, the Balon D’or winner for the 2025-26 year is without a doubt the most complete forward in the world. His performance for England and Bayern Munich set him up to win the trophy after scoring 73 goals and 8 assists in 65 games. Kane finished with three trophies being the Bundesliga, German Cup and German Super Cup.</p>
+<p><a href="https://ballondor.com/players/kylian-mbappe-6150">Kylian Mbappé</a> finished second this year and became the World Cup’s all-time leading goalscorer after finishing the tournament with 10 goals and 58 total goals with 13 assists over 60 matches played. Mbappé also finished trophyless over the last cycle.</p>
+<p><a href="https://ballondor.com/players/kylian-mbappe-6150">Erling Haaland</a>, on the other hand finished with 58 goals and 11 assists over 64 total games played and finished all the way down in eighth place despite also winning two trophies with Manchester City.</p>
+<p>But how do these players relate to others in their position and other positions within the top five European leagues, those being the Premier League in England, La Liga in Spain, the Bundesliga in Germany, Serie A in Italy and Ligue 1 in France?</p>
+<div class="cell">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">library</span>(tidyverse)</span>
+<span id="cb3-2"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">library</span>(ggrepel)</span>
+<span id="cb3-3"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">library</span>(ggbeeswarm)</span>
+<span id="cb3-4"></span>
+<span id="cb3-5">epl2627 <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">read_csv</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"EPL_2026-27.csv.csv"</span>) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">|&gt;</span></span>
+<span id="cb3-6">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">mutate</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">season =</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2027</span>)</span>
+<span id="cb3-7">epl2526 <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">read_csv</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"EPL_2025-26.csv.csv"</span>)<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">|&gt;</span></span>
+<span id="cb3-8">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">mutate</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">season =</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2026</span>)</span>
+<span id="cb3-9">epl2425 <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">read_csv</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"EPL_2024-25.csv.csv"</span>)<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">|&gt;</span></span>
+<span id="cb3-10">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">mutate</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">season =</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2025</span>)</span>
+<span id="cb3-11">epl2324 <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">read_csv</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"EPL_2023-24.csv.csv"</span>)<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">|&gt;</span></span>
+<span id="cb3-12">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">mutate</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">season =</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2024</span>)</span>
+<span id="cb3-13">epl2223 <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">read_csv</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"EPL_2022-23.csv.csv"</span>)<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">|&gt;</span></span>
+<span id="cb3-14">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">mutate</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">season =</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2023</span>)</span>
+<span id="cb3-15"></span>
+<span id="cb3-16">bundes2627 <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">read_csv</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Bundes_2026-27.csv.csv"</span>) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">|&gt;</span></span>
+<span id="cb3-17">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">mutate</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">season =</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2027</span>)</span>
+<span id="cb3-18">bundes2526 <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">read_csv</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Bundes_2025-26.csv.csv"</span>)<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">|&gt;</span></span>
+<span id="cb3-19">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">mutate</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">season =</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2026</span>)</span>
+<span id="cb3-20">bundes2425 <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">read_csv</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Bundes_2024-25.csv.csv"</span>)<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">|&gt;</span></span>
+<span id="cb3-21">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">mutate</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">season =</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2025</span>)</span>
+<span id="cb3-22">budes2324 <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">read_csv</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Bundes_2023-24.csv.csv"</span>)<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">|&gt;</span></span>
+<span id="cb3-23">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">mutate</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">season =</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2024</span>)</span>
+<span id="cb3-24">bundes2223 <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">read_csv</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Bundes_2022-23.csv.csv"</span>)<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">|&gt;</span></span>
+<span id="cb3-25">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">mutate</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">season =</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2023</span>)</span>
+<span id="cb3-26"></span>
+<span id="cb3-27">laliga2627 <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">read_csv</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"LaLiga_2026-27.csv.csv"</span>) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">|&gt;</span></span>
+<span id="cb3-28">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">mutate</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">season =</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2027</span>)</span>
+<span id="cb3-29">laliga2526 <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">read_csv</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"LaLiga_2025-26.csv.csv"</span>)<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">|&gt;</span></span>
+<span id="cb3-30">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">mutate</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">season =</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2026</span>)</span>
+<span id="cb3-31">laliga2425 <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">read_csv</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"LaLiga_2024-25.csv.csv"</span>)<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">|&gt;</span></span>
+<span id="cb3-32">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">mutate</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">season =</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2025</span>)</span>
+<span id="cb3-33">laliga2324 <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">read_csv</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"LaLiga_2023-24.csv.csv"</span>)<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">|&gt;</span></span>
+<span id="cb3-34">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">mutate</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">season =</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2024</span>)</span>
+<span id="cb3-35">laliga2223 <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">read_csv</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"LaLiga_2022-23.csv.csv"</span>)<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">|&gt;</span></span>
+<span id="cb3-36">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">mutate</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">season =</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2023</span>)</span>
+<span id="cb3-37"></span>
+<span id="cb3-38">ligue2627 <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">read_csv</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Ligue1_2026-27.csv.csv"</span>) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">|&gt;</span></span>
+<span id="cb3-39">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">mutate</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">season =</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2027</span>)</span>
+<span id="cb3-40">ligue2526 <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">read_csv</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Ligue1_2025-26.csv.csv"</span>)<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">|&gt;</span></span>
+<span id="cb3-41">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">mutate</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">season =</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2026</span>)</span>
+<span id="cb3-42">ligue2425 <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">read_csv</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Ligue1_2024-25.csv.csv"</span>)<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">|&gt;</span></span>
+<span id="cb3-43">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">mutate</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">season =</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2025</span>)</span>
+<span id="cb3-44">ligue2324 <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">read_csv</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Ligue1_2023-24.csv.csv"</span>)<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">|&gt;</span></span>
+<span id="cb3-45">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">mutate</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">season =</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2024</span>)</span>
+<span id="cb3-46">ligue2223 <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">read_csv</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Ligue1_2022-23.csv.csv"</span>)<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">|&gt;</span></span>
+<span id="cb3-47">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">mutate</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">season =</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2023</span>)</span>
+<span id="cb3-48"></span>
+<span id="cb3-49">seriea2627 <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">read_csv</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"SerieA_2026-27.csv.csv"</span>) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">|&gt;</span></span>
+<span id="cb3-50">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">mutate</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">season =</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2027</span>)</span>
+<span id="cb3-51">seriea2526 <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">read_csv</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"SerieA_2025-26.csv.csv"</span>)<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">|&gt;</span></span>
+<span id="cb3-52">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">mutate</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">season =</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2026</span>)</span>
+<span id="cb3-53">seriea2425 <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">read_csv</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"SerieA_2024-25.csv.csv"</span>)<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">|&gt;</span></span>
+<span id="cb3-54">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">mutate</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">season =</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2025</span>)</span>
+<span id="cb3-55">seriea2324 <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">read_csv</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"SerieA_2023-24.csv.csv"</span>)<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">|&gt;</span></span>
+<span id="cb3-56">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">mutate</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">season =</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2024</span>)</span>
+<span id="cb3-57">seriea2223 <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">read_csv</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"SerieA_2022-23.csv.csv"</span>)<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">|&gt;</span></span>
+<span id="cb3-58">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">mutate</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">season =</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2023</span>)</span>
+<span id="cb3-59"></span>
+<span id="cb3-60">combined_epl_full <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">bind_rows</span>(epl2223, epl2324, epl2425, epl2526)</span>
+<span id="cb3-61">combined_bundes_full <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">bind_rows</span>(bundes2223, budes2324, bundes2425, bundes2526)</span>
+<span id="cb3-62">combined_laliga_full <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">bind_rows</span>(laliga2223, laliga2324, laliga2425, laliga2526)</span>
+<span id="cb3-63">combined_ligue_full <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">bind_rows</span>(ligue2223, ligue2324, ligue2425, ligue2526)</span>
+<span id="cb3-64">combined_seriea_full <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">bind_rows</span>(seriea2223, seriea2324, seriea2425, seriea2526)</span>
+<span id="cb3-65"></span>
+<span id="cb3-66">combined_top5 <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">bind_rows</span>(combined_bundes_full, combined_epl_full, combined_laliga_full, combined_ligue_full, combined_seriea_full)</span>
+<span id="cb3-67"></span>
+<span id="cb3-68">h2223 <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> epl2223 <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">|&gt;</span></span>
+<span id="cb3-69">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">filter</span>(Player <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">==</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Erling Haaland"</span>) </span>
+<span id="cb3-70">h2324 <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> epl2324 <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">|&gt;</span></span>
+<span id="cb3-71">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">filter</span>(Player <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">==</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Erling Haaland"</span>) </span>
+<span id="cb3-72">h2425 <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> epl2425 <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">|&gt;</span></span>
+<span id="cb3-73">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">filter</span>(Player <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">==</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Erling Haaland"</span>) </span>
+<span id="cb3-74">h2526 <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> epl2526 <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">|&gt;</span></span>
+<span id="cb3-75">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">filter</span>(Player <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">==</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Erling Haaland"</span>) </span>
+<span id="cb3-76">h2627 <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> epl2627 <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">|&gt;</span></span>
+<span id="cb3-77">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">filter</span>(Player <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">==</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Erling Haaland"</span>)</span>
+<span id="cb3-78"></span>
+<span id="cb3-79">combined_haaland_full <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">bind_rows</span>(h2223, h2324, h2425, h2526)</span>
+<span id="cb3-80"></span>
+<span id="cb3-81">k2223 <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> epl2223 <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">|&gt;</span></span>
+<span id="cb3-82">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">filter</span>(Player <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">==</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Harry Kane"</span>) </span>
+<span id="cb3-83">k2324 <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> budes2324 <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">|&gt;</span></span>
+<span id="cb3-84">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">filter</span>(Player <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">==</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Harry Kane"</span>) </span>
+<span id="cb3-85">k2425 <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> bundes2425 <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">|&gt;</span></span>
+<span id="cb3-86">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">filter</span>(Player <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">==</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Harry Kane"</span>) </span>
+<span id="cb3-87">k2526 <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> bundes2526 <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">|&gt;</span></span>
+<span id="cb3-88">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">filter</span>(Player <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">==</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Harry Kane"</span>) </span>
+<span id="cb3-89">k2627 <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> bundes2627 <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">|&gt;</span></span>
+<span id="cb3-90">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">filter</span>(Player <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">==</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Harry Kane"</span>)</span>
+<span id="cb3-91"></span>
+<span id="cb3-92">combined_kane_full <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">bind_rows</span>(k2223, k2324, k2425, k2526)</span>
+<span id="cb3-93"></span>
+<span id="cb3-94">mb2223 <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> ligue2223 <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">|&gt;</span></span>
+<span id="cb3-95">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">filter</span>(Player <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">==</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Kylian Mbappé"</span>) </span>
+<span id="cb3-96">mb2324 <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> ligue2324 <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">|&gt;</span></span>
+<span id="cb3-97">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">filter</span>(Player <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">==</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Kylian Mbappé"</span>) </span>
+<span id="cb3-98">mb2425 <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> laliga2425 <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">|&gt;</span></span>
+<span id="cb3-99">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">filter</span>(Player <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">==</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Kylian Mbappé"</span>) </span>
+<span id="cb3-100">mb2526 <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> laliga2526 <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">|&gt;</span></span>
+<span id="cb3-101">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">filter</span>(Player <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">==</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Kylian Mbappé"</span>) </span>
+<span id="cb3-102">mb2627 <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> laliga2627 <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">|&gt;</span></span>
+<span id="cb3-103">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">filter</span>(Player <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">==</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Kylian Mbappé"</span>)</span>
+<span id="cb3-104"></span>
+<span id="cb3-105">combined_mbappe_full <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">bind_rows</span>(mb2223, mb2324, mb2425, mb2526)</span>
+<span id="cb3-106"></span>
+<span id="cb3-107">goalscorers <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> combined_top5 <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">|&gt;</span></span>
+<span id="cb3-108">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">filter</span>(</span>
+<span id="cb3-109">    Gls <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&gt;</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">5</span></span>
+<span id="cb3-110">  )</span>
+<span id="cb3-111"></span>
+<span id="cb3-112">top3 <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">bind_rows</span>(combined_haaland_full, combined_mbappe_full, combined_kane_full)</span>
+<span id="cb3-113"></span>
+<span id="cb3-114"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">set.seed</span>(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1234</span>)</span>
+<span id="cb3-115"></span>
+<span id="cb3-116"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">ggplot</span>() <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span></span>
+<span id="cb3-117">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">geom_quasirandom</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">data =</span> goalscorers, <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">aes</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">x=</span>Pos, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">y=</span>Gls), <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">color=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"grey"</span>) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span></span>
+<span id="cb3-118">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">geom_quasirandom</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">data =</span> combined_haaland_full, <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">aes</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">x=</span>Pos, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">y=</span>Gls, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">color=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Erling Haaland"</span>)) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span></span>
+<span id="cb3-119">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">geom_quasirandom</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">data =</span> combined_kane_full, <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">aes</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">x=</span>Pos, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">y=</span>Gls, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">color=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Harry Kane"</span>)) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span></span>
+<span id="cb3-120">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">geom_quasirandom</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">data =</span> combined_mbappe_full, <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">aes</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">x=</span>Pos, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">y=</span>Gls, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">color=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Kylian Mbappé"</span>)) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span></span>
+<span id="cb3-121">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">scale_color_manual</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">values =</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">c</span>(</span>
+<span id="cb3-122">    <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"#6CABDD"</span>, <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Erling Haaland</span></span>
+<span id="cb3-123">    <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"#DC052D"</span>, <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Harry Kane</span></span>
+<span id="cb3-124">    <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"#FEBE10"</span> <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Kylian Mbappé</span></span>
+<span id="cb3-125">  )) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span></span>
+<span id="cb3-126">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">labs</span>(</span>
+<span id="cb3-127">    <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">x=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Position"</span>, </span>
+<span id="cb3-128">    <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">y=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Goals"</span>, </span>
+<span id="cb3-129">    <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">title=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Top Goalscorers by Postion"</span>, </span>
+<span id="cb3-130">    <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">subtitle =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"The most goals since the start of the 2022 season through the 2025-26 season."</span>,</span>
+<span id="cb3-131">    <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">caption=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Source: FBref.com | By Kade Martin"</span></span>
+<span id="cb3-132">  ) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span></span>
+<span id="cb3-133">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">theme_minimal</span>()  <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span> </span>
+<span id="cb3-134">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">theme</span>(</span>
+<span id="cb3-135">    <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">plot.title =</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">element_text</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">size =</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">20</span>, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">face =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"bold"</span>),</span>
+<span id="cb3-136">    <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">axis.title =</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">element_text</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">size =</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">8</span>), </span>
+<span id="cb3-137">    <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">plot.subtitle =</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">element_text</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">size=</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">10</span>), </span>
+<span id="cb3-138">    <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">panel.grid.minor =</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">element_blank</span>()</span>
+<span id="cb3-139">  )</span></code></pre></div></div>
 </details>
 <div class="cell-output-display">
 <div>
@@ -2315,6 +2325,8 @@ font-style: inherit;">element_blank</span>()</span>
 </div>
 </div>
 </div>
+<p>Kane ranks the highest with two seasons with 36 league goals in 2023-24 and 2025-26 seasons, Haaland has one season with 36 goals in the 2022-23 season and Mbappé had 31 as his highest in the 2024-25 season.</p>
+<p>So whether the Balon D’or voting process is messed up or there are other factors bringing Mbappé up, there should be no reason why Haaland is all the way down in eighth place while the two other strikers are finishing first and second respectively.</p>
 
 
 
